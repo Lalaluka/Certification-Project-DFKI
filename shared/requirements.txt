@@ -1,0 +1,4 @@
+# Shared requirements for RAG utilities
+sentence-transformers>=2.2.0
+numpy>=1.21.0
+langchain-text-splitters>=0.0.1

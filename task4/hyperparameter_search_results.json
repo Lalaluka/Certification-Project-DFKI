@@ -1,0 +1,172 @@
+[
+  {
+    "experiment_id": 1,
+    "hyperparameters": {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "warmup_steps": 50
+    },
+    "val_loss": 1.8179311752319336,
+    "training_time": 7990.281010866165,
+    "output_dir": "experiments/model_1",
+    "attempt_number": 1
+  },
+  {
+    "experiment_id": 2,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 2,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "warmup_steps": 50
+    },
+    "val_loss": 1.3042116165161133,
+    "training_time": 10307.92974805832,
+    "output_dir": "experiments/model_2",
+    "attempt_number": 3
+  },
+  {
+    "experiment_id": 3,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 1,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 16,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "warmup_steps": 100
+    },
+    "val_loss": 1.8132060766220093,
+    "training_time": 4034.8325979709625,
+    "output_dir": "experiments/model_3",
+    "attempt_number": 6
+  },
+  {
+    "experiment_id": 4,
+    "hyperparameters": {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "batch_size": 8,
+      "gradient_accumulation_steps": 16,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "warmup_steps": 50
+    },
+    "val_loss": 2.1930153369903564,
+    "training_time": 3826.5968861579895,
+    "output_dir": "experiments/model_4",
+    "attempt_number": 10
+  },
+  {
+    "experiment_id": 5,
+    "hyperparameters": {
+      "learning_rate": 5e-05,
+      "epochs": 1,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 16,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "warmup_steps": 100
+    },
+    "val_loss": 1.9585391283035278,
+    "training_time": 3780.0692081451416,
+    "output_dir": "experiments/model_5",
+    "attempt_number": 15
+  },
+  {
+    "experiment_id": 6,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 2,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 16,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "warmup_steps": 100
+    },
+    "val_loss": 1.3222286701202393,
+    "training_time": 7523.653843164444,
+    "output_dir": "experiments/model_6",
+    "attempt_number": 21
+  },
+  {
+    "experiment_id": 7,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 2,
+      "batch_size": 8,
+      "gradient_accumulation_steps": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "warmup_steps": 50
+    },
+    "val_loss": 1.3659690618515015,
+    "training_time": 7720.061158895493,
+    "output_dir": "experiments/model_7",
+    "attempt_number": 28
+  },
+  {
+    "experiment_id": 8,
+    "hyperparameters": {
+      "learning_rate": 5e-05,
+      "epochs": 1,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.1,
+      "warmup_steps": 100
+    },
+    "val_loss": 1.4815716743469238,
+    "training_time": 3776.4614717960358,
+    "output_dir": "experiments/model_8",
+    "attempt_number": 36
+  },
+  {
+    "experiment_id": 9,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 2,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 16,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "warmup_steps": 50
+    },
+    "val_loss": 1.3304446935653687,
+    "training_time": 10325.813401937485,
+    "output_dir": "experiments/model_9",
+    "attempt_number": 45
+  },
+  {
+    "experiment_id": 10,
+    "hyperparameters": {
+      "learning_rate": 0.0001,
+      "epochs": 1,
+      "batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "warmup_steps": 100
+    },
+    "val_loss": 1.3326630592346191,
+    "training_time": 3883.251252889633,
+    "output_dir": "experiments/model_10",
+    "attempt_number": 55
+  }
+]

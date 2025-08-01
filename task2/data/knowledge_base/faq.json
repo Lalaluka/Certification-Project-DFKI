@@ -1,0 +1,74 @@
+[
+  {
+    "question": "How do I reset my router?",
+    "answer": "To reset your router, press and hold the reset button for 10 seconds. The lights will blink to indicate it's restarting."
+  },
+  {
+    "question": "Why is my internet slow?",
+    "answer": "Slow internet can be caused by network congestion, outdated equipment, or interference. Try restarting your router or contacting support."
+  },
+  {
+    "question": "How can I check for service outages?",
+    "answer": "Visit our service status page or contact our support team to check if there are outages in your area."
+  },
+  {
+    "question": "Can I change my Wi-Fi name and password?",
+    "answer": "Yes, log into your router settings via your browser and navigate to Wireless Settings to change the name and password."
+  },
+  {
+    "question": "What should I do if I forgot my Wi-Fi password?",
+    "answer": "You can reset it through your router settings or perform a factory reset to restore the default credentials."
+  },
+  {
+    "question": "How do I cancel my contract?",
+    "answer": "To cancel your contract, contact customer service with your account details. A cancellation confirmation will be sent to you."
+  },
+  {
+    "question": "What is the average installation time for internet service?",
+    "answer": "Installation usually takes 1 hour. A technician will confirm the exact timing before the appointment."
+  },
+  {
+    "question": "The technician didn’t show up. What now?",
+    "answer": "We’re sorry for the inconvenience. Please contact us to reschedule your appointment as soon as possible."
+  },
+  {
+    "question": "How do I update my billing information?",
+    "answer": "Log into your customer portal and navigate to 'Billing Settings' to update your payment method and billing address."
+  },
+  {
+    "question": "Why was I charged twice this month?",
+    "answer": "Double charges may occur due to overlapping billing cycles. Please contact support to review and resolve the issue."
+  },
+  {
+    "question": "Can I pause my internet service temporarily?",
+    "answer": "No, we do not offer a pause option."
+  },
+  {
+    "question": "How do I upgrade my internet plan?",
+    "answer": "Visit our website or contact support to explore available plans and upgrade options."
+  },
+  {
+    "question": "How do I reach technical support?",
+    "answer": "You can reach us 24/7 via phone, email, or live chat on our website."
+  },
+  {
+    "question": "My internet drops every night. Why?",
+    "answer": "This may be due to automatic router updates or interference. Try moving the router or contacting support for troubleshooting."
+  },
+  {
+    "question": "How can I test my internet speed?",
+    "answer": "Use our speed test tool available on the website to check your current upload and download speeds."
+  },
+  {
+    "question": "What do I do if my account is locked?",
+    "answer": "Reset your password using the 'Forgot Password' link. If the issue persists, contact customer support."
+  },
+  {
+    "question": "Where do I receive my bill?",
+    "answer": "Your bill is sent to your registered email address and can also be viewed in your online account portal."
+  },
+  {
+    "question": "My connection is slower than advertised. What can I do?",
+    "answer": "The advertised speed is the maximum possible. Lower speeds can occur during peak times. If your speed is consistently below 80% of the advertised rate, please contact support for assistance."
+  }
+]

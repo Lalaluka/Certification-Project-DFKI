@@ -1,0 +1,138 @@
+description: Customer support prompt evaluation (dynamically generated)
+providers:
+- ollama:mistral:latest
+- ollama:phi:latest
+prompts:
+- id: empathetic
+  raw: file://prompts/empathetic.txt
+- id: friendly
+  raw: file://prompts/friendly.txt
+- id: structured
+  raw: file://prompts/structured.txt
+tests:
+- vars:
+    complaint: The installation technician never showed up.
+  assert:
+  - type: llm-rubric
+    value: Response sounds like a human customer support agent in a face to face conversation
+      and not have the format of an email
+    provider: ollama:llama3:70b
+  - type: llm-rubric
+    value: Response takes responsibility and apologizes for the missed appointment
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response offers to reschedule or provides next steps
+    provider: ollama:mistral:latest
+  - type: regex
+    value: (apologize|sorry|reschedule|new appointment)
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+- vars:
+    complaint: My connection drops every night at around 1 o'clock.
+  assert:
+  - type: llm-rubric
+    value: Response acknowledges the specific timing pattern mentioned
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response suggests relevant troubleshooting for scheduled disconnections
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+- vars:
+    complaint: I cancelled my contract but have not received a confirmation yet.
+  assert:
+  - type: llm-rubric
+    value: Response addresses the missing confirmation professionally
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response offers to provide confirmation or check status
+    provider: ollama:mistral:latest
+  - type: regex
+    value: (confirmation|cancelled|check|verify|status)
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+- vars:
+    complaint: My internet speed is much slower than advertised.
+  assert:
+  - type: llm-rubric
+    value: Response acknowledges the speed discrepancy issue
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response offers speed testing or technical solutions
+    provider: ollama:mistral:latest
+  - type: regex
+    value: (speed|test|troubleshoot|technical|check)
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+- vars:
+    complaint: I forgot the password for my Wi-Fi network.
+  assert:
+  - type: llm-rubric
+    value: Response provides clear steps to recover or reset Wi-Fi password
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response is patient and understanding about password issues
+    provider: ollama:mistral:latest
+  - type: regex
+    value: (password|reset|router|modem|settings)
+  - type: javascript
+    value: 'output.length < 300 ? 1 : 0.5'
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+- vars:
+    complaint: My internet does not work at all.
+  assert:
+  - type: llm-rubric
+    value: Response treats this as an urgent issue requiring immediate attention
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Response provides systematic troubleshooting steps
+    provider: ollama:mistral:latest
+  - type: regex
+    value: (troubleshoot|check|restart|cable|connection)
+  - type: not-icontains
+    value: later
+  - type: llm-rubric
+    value: Rate this response for empathy (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for clarity (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest
+  - type: llm-rubric
+    value: Rate this response for usefulness (1–5). Minimum acceptable score is 3.
+    provider: ollama:mistral:latest

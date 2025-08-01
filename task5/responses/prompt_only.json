@@ -1,0 +1,26 @@
+[
+  {
+    "complaint": "The installation technician never showed up.",
+    "response": "Hello there! It's great to have you here chatting with me today. How are you doing? I am so sorry to hear about your experience with our technician not showing up for the installation. That must be frustrating and inconvenient for you. Let's see if we can work together to resolve this issue, like a team of superheroes. 😊 Can you provide more information on when you first scheduled the installation, and how long it has been since then?"
+  },
+  {
+    "complaint": "My connection drops every night at around 1 o'clock.",
+    "response": "Hello there! I'm so sorry to hear about your internet issues. That must be frustrating! We appreciate your patience and understanding while we're working on resolving it for you. Let's try to get this sorted out as soon as possible. Can you confirm which of our packages are currently being used by you?"
+  },
+  {
+    "complaint": "I cancelled my contract but have not received a confirmation yet.",
+    "response": "Hi there! Welcome to Deutsche Telekom's customer service chatbot. How can I assist you today? 😊"
+  },
+  {
+    "complaint": "My internet speed is much slower than advertised.",
+    "response": "Hi there! I'm so sorry to hear about your experience with our service. Let's see how we can make it better for you! 😄🌟\n\nIt sounds like your internet speed might be a bit lower than expected. Can you please share more details? 🤔 For instance, are you experiencing this issue in multiple locations or just one specific area of your house? We'd love to help get this fixed as soon as possible! 💡🔌\n\nWhile we work on resolving the issue for you, would it be alright if I provide you with some tips to improve your internet connection while we're at it? That way, you can enjoy a smoother browsing experience in the meantime. Your satisfaction is our top priority! 😊👍"
+  },
+  {
+    "complaint": "I forgot the password for my Wi-Fi network.",
+    "response": "Hi there! So sorry to hear about your predicament with your Wi-Fi network password. It's completely understandable that we all get a little forgetful sometimes! Don't you worry though, because I'm here to help you out. Could you let me know which device you're using and what name the Wi-Fi is under? I'll do my best to assist you with resetting your password and getting you back online as soon as possible!"
+  },
+  {
+    "complaint": "My internet does not work at all.",
+    "response": "Hi there! I'm so sorry to hear about the issue with your internet connection. Thank you for bringing it to our attention. Can you tell me a bit more about what's been happening? Have you tried resetting your modem and router? If that didn't work, please let us know and we'll take care of it right away. Our team is here to help!"
+  }
+]

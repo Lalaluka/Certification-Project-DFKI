@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-31T21:48:49.552219",
+  "base_model": {
+    "name": "microsoft/phi-2",
+    "avg_perplexity": 11.286468823750814,
+    "std_perplexity": 0.20497107198484718,
+    "min_perplexity": 11.018030166625977,
+    "max_perplexity": 11.57221794128418
+  },
+  "finetuned_model": {
+    "path": "../task4/experiments/model_1",
+    "avg_perplexity": 10.659220536549887,
+    "std_perplexity": 0.19038454955433318,
+    "min_perplexity": 10.405348777770996,
+    "max_perplexity": 10.93502140045166
+  },
+  "improvement_percentage": 5.557524651828837,
+  "num_scenarios": 6
+}
